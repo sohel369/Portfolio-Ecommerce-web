@@ -358,22 +358,7 @@ p {
     }
   }
 }
-@media screen and (max-width: 768px) {
-  .product {
-    width: 100%;
-    padding: 10px 2%;
-    .pro_container {
-      width: 100%;
-      display: flex;
-      flex-direction: column;
-      .pro{
-        width: 90%;
-        margin: 0 auto;
-      }
-    }
-  }
-  
-}
+
 /* banner */
 .banner {
   display: flex;
@@ -661,4 +646,19 @@ footer {
     width: 100%;
     text-align: center;
   }
+}@media screen and (max-width: 768px) {
+  .product {
+    width: 100%;
+    padding: 10px 2%;
+    .pro_container {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      .pro{
+        width: 90%;
+        margin: 0 auto;
+      }
+    }
+  }
+  
 }
