@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
         integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-        
+
 
 </head>
 
@@ -31,8 +31,19 @@
             <li><a href="blog.html">Blog</a></li>
             <li><a href="about.html">About</a></li>
             <li><a href="contact.html">Contact</a></li>
-            <li><a href="cart.html"><i class="fa-solid fa-bag-shopping"></i></a></li>
+            <li><a href="cart.html0" class="lg_bag"><i class="fa-solid fa-bag-shopping"></i></a></li>
+            <a href="#" class="close" onclick="clapp()"><i class="fa-solid fa-xmark"></i></a>
+            <div class="search_bar">
+                <form action="">
+                    <input type="search" placeholder="search">
+                    <button type="submit" class="search_btn" onclick="searchs()">Search</button>
+                </form>
+            </div>
         </ul>
+        <div class="menu" onclick="myMenu()">
+            <a href="cart.html"><i class="fa-solid fa-bag-shopping"></i></a>
+            <i class="fa-solid fa-bars"></i>
+        </div>
     </section>
 
     <!-- hero section -->
@@ -455,21 +466,7 @@
 
 
 
-    <script>
-        let header = document.getElementById("header");
-
-        window.addEventListener("scroll", function () {
-            header.classList.toggle("activeScroll", window.scrollY > 0)
-        });
-        let body = document.querySelector(".banner");
-        window.addEventListener("scroll", function () {
-            body.classList.toggle("activeY", window.scrollY > 1400)
-        });
-        window.addEventListener("scroll", function () {
-            let header = document.getElementById("header");
-            header.classList.toggle("longscroll", window.scrollY > 1000)
-        })
-    </script>
+    <script src="script.js"></script>
 </body>
 
 </html>
