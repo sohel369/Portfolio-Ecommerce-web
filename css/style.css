@@ -199,12 +199,12 @@ p {
   background-image: url('..//./img/hero4.png');
   height: 90vh;
   width: 100%;
-  background-position: top 25% right 0;
+  background-position: top 25% right 30%;
   background-size: cover;
   padding: 0 50px;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: start;
   justify-content: center;
 
 }
@@ -914,6 +914,7 @@ footer {
     padding: 0 20px;
     background-position: 60%;
 
+    
     h2 {
       font-size: 30px;
     }
