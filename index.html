@@ -15,7 +15,6 @@
         integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-
 </head>
 
 <body id="body">
@@ -231,6 +230,12 @@
     </section>
 
 
+    <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d233667.49930141334!2d90.25487247764768!3d23.781067239454273!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755b8b087026b81%3A0x8fa563bbdd5904c2!2z4Kai4Ka-4KaV4Ka-!5e0!3m2!1sbn!2sbd!4v1729222036596!5m2!1sbn!2sbd"
+        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+
     <!-- New Arrivals -->
     <section id="product" class="product">
         <h2 contenteditable="true" title="Click to Edit">New Arrivals</h2>
@@ -238,7 +243,7 @@
         <div class="pro_container">
             <!-- box 1 -->
             <div class="pro normal">
-                <img src="./img/n1.jpg" alt="Product image">
+                <img src="/img/n1.jpg" alt="Product image">
                 <div class="desc">
                     <span>addidas</span>
                     <h5>Cartoon Astronaut T-Shirt</h5>
@@ -369,7 +374,7 @@
     </section>
 
     <!-- sm banner -->
-    <section class="sm_banner">
+    <section class="sm_banner" id="sm_banner">
         <div class="banner_box">
             <h4>Crazy deal</h4>
             <h2>Buy 1 get 1 free</h2>
@@ -461,9 +466,17 @@
         </div>
     </footer>
 
-    <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d233667.49930141334!2d90.25487247764768!3d23.781067239454273!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755b8b087026b81%3A0x8fa563bbdd5904c2!2z4Kai4Ka-4KaV4Ka-!5e0!3m2!1sbn!2sbd!4v1729222036596!5m2!1sbn!2sbd" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> -->
-
-
+    <div class="popUp_btn" onclick="popUps()">
+        <button class="btn"><i class="fa-solid fa-plus"></i></button>
+    </div>
+    <div class="popUp">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">contact</a></li>
+            <li><a href="#">About us</a></li>
+            <li><a href="#sm_banner">Help</a></li>
+        </ul>
+    </div>
 
 
     <script src="script.js"></script>

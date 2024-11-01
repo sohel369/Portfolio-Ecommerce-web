@@ -22,7 +22,10 @@ function myMenu() {
 
 // when window scroll navbar close
 window.onscroll = () => {
-    navbar.classList.remove("newNav")
+    let popUp = document.querySelector(".popUp")
+    // navbar.classList.remove("newNav")
+    popUp.classList.remove("popActive")
+
 }
 // xmark/cros icon when clicked navbar display none
 function clapp() {
@@ -31,4 +34,13 @@ function clapp() {
 // when search_btn clicked navbar display none
 function searchs() {
     navbar.classList.remove("newNav")
+};
+
+function popUps() {
+    let popUps = document.querySelector(".popUp_btn")
+    let popUp = document.querySelector(".popUp");
+    let popUp_btn = document.querySelector("popUp_btn")
+    popUp.classList.toggle("popActive")
+    popUp_btn.classList.toggle("hiddenPop")
 }
+
