@@ -44,6 +44,117 @@
             <i class="fa-solid fa-bars"></i>
         </div>
     </section>
+    <section class="prodetails">
+        <div class="single_pro_img">
+            <img src="img/f2.jpg" width="100%" id="main_Img" alt="">
+            <div class="small_img_group">
+                <div class="small_img_col">
+                    <img src="img/f2.jpg" width="100%" class="small_img" alt="">
+                </div>
+                <div class="small_img_col">
+                    <img src="img/f3.jpg" width="100%" class="small_img" alt="">
+                </div>
+                <div class="small_img_col">
+                    <img src="img/f4.jpg" width="100%" class="small_img" alt="">
+                </div>
+                <div class="small_img_col">
+                    <img src="img/f5.jpg" width="100%" class="small_img" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="single_pro_details">
+            <h5>T Shirt</h5>
+            <h4>Men's Fashion T-Shirt</h4>
+            <h2>$140.00</h2>
+            <select name="" id="">
+                <option value="">Select size</option>
+                <option value="">Small</option>
+                <option value="">Large</option>
+                <option value="">XL</option>
+                <option value="">XXL</option>
+            </select>
+            <input type="number" value="1">
+            <button>Ad to cart</button>
+            <h4>Product Details</h4>
+            <span>The Giddan ultra cotton is made from subtential T-shirt 6.00 per sq yd fabric contructed from 100%
+                cotton, this classic fit presrunk jersey nit provides unmatched comfort with each wear, Featuring to
+                taped neck and Shoulder, and a seamless double-needle collar, and available in a range of collor, if
+                offers it all in the ultimate head turning package.</span>
+        </div>
+    </section>
+
+    <section id="product" class="product">
+        <h2 contenteditable="true" title="Click to Edit">features Product</h2>
+        <p>Summer Collection New Modern Design</p>
+        <div class="pro_container">
+            <!-- box 1 -->
+            <div class="pro">
+                <img src="/img/n1.jpg" alt="Product image">
+                <div class="desc">
+                    <span>addidas</span>
+                    <h5>Cartoon Astronaut T-Shirt</h5>
+                    <div class="star">
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                    <h4>$80</h4>
+                </div>
+                <a href="#" class="cart"><i class="fa-solid fa-cart-shopping"></i></a>
+            </div> <!-- box 2 -->
+            <div class="pro">
+                <img src="./img/n2.jpg" alt="Product image">
+                <div class="desc">
+                    <span>addidas</span>
+                    <h5>Cartoon Astronaut T-Shirt</h5>
+                    <div class="star">
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                    <h4>$80</h4>
+                </div>
+                <a href="#" class="cart"><i class="fa-solid fa-cart-shopping"></i></a>
+            </div> <!-- box 3 -->
+            <div class="pro">
+                <img src="./img/n3.jpg" alt="Product image">
+                <div class="desc">
+                    <span>addidas</span>
+                    <h5>Cartoon Astronaut T-Shirt</h5>
+                    <div class="star">
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                    <h4>$80</h4>
+                </div>
+                <a href="#" class="cart"><i class="fa-solid fa-cart-shopping"></i></a>
+            </div> <!-- box 4 -->
+            <div class="pro">
+                <img src="./img/n4.jpg" alt="Product image">
+                <div class="desc">
+                    <span>addidas</span>
+                    <h5>Cartoon Astronaut T-Shirt</h5>
+                    <div class="star">
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                    <h4>$80</h4>
+                </div>
+                <a href="#" class="cart"><i class="fa-solid fa-cart-shopping"></i></a>
+            </div> <!-- box 5 -->
+
+        </div>
+    </section>
 
     <footer>
         <div class="col">
@@ -93,6 +204,23 @@
         </div>
     </footer>
 
+
+    <script>
+        let main_Img = document.getElementById("main_Img");
+        let small_img = document.getElementsByClassName("small_img");
+        small_img[0].onclick = function () {
+            main_Img.src = small_img[0].src;
+        }
+        small_img[1].onclick = function () {
+            main_Img.src = small_img[1].src;
+        }
+        small_img[2].onclick = function () {
+            main_Img.src = small_img[2].src;
+        }
+        small_img[3].onclick = function () {
+            main_Img.src = small_img[3].src;
+        }
+    </script>
     <script src="script.js"></script>
 </body>
 
