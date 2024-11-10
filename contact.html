@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecomerce Portfolio website</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- google fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Qwitcher+Grypen:wght@400;700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Sixtyfour+Convergence&display=swap"
+        rel="stylesheet">
+    <!-- fonts awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+
+    <!-- header -->
+    <section class="header" id="header">
+        <a href="index.html"><img src="./img/logo.png" class="logo" alt=""></a>
+
+
+        <ul class="navbar">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html" class="active">Contact</a></li>
+            <li><a href="cart.html0" class="lg_bag"><i class="fa-solid fa-bag-shopping"></i></a></li>
+            <a href="#" class="close" onclick="clapp()"><i class="fa-solid fa-xmark"></i></a>
+            <div class="search_bar">
+                <form action="">
+                    <input type="search" placeholder="search">
+                    <button type="submit" class="search_btn" onclick="searchs()">Search</button>
+                </form>
+            </div>
+        </ul>
+        <div class="menu" onclick="myMenu()">
+            <a href="cart.html"><i class="fa-solid fa-bag-shopping"></i></a>
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    </section>
+
+    <!-- hero section -->
+    <section class="about_header page_header" id="page_header">
+        <h2>Let's Talk</h2>
+        <p>LEAVE A MESSAGE, We love to hear from you!</p>
+    </section>
+    <section class="contact_details">
+        <div class="details">
+            <span>Get In Touch</span>
+            <h2>Visit one of our agency location or contact us today.</h2>
+            <h3>Head office.</h3>
+            <div>
+                <li>
+                    <i class="fa-solid fa-map"></i>
+                    <p>5G Glassford Street Glasgow 1 1UL New Yourk</p>
+                </li>
+            </div>
+            <div>
+                <li>
+                    <i class="fa-solid fa-envelope"></i>
+                    <p>5G Glassford Street Glasgow 1 1UL New Yourk</p>
+                </li>
+            </div>
+            <div>
+                <li>
+                    <i class="fa-solid fa-phone"></i>
+                    <p>5G Glassford Street Glasgow 1 1UL New Yourk</p>
+                </li>
+            </div>
+            <div>
+                <li>
+                    <i class="fa-solid fa-clock"></i>
+                    <p>5G Glassford Street Glasgow 1 1UL New Yourk</p>
+                </li>
+            </div>
+        </div>
+        <div class="map">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8850423.30157573!2d89.47650894789447!3d24.383728432978927!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755b8b087026b81%3A0x8fa563bbdd5904c2!2z4Kai4Ka-4KaV4Ka-!5e0!3m2!1sbn!2sbd!4v1731210916035!5m2!1sbn!2sbd"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </section>
+
+    <section class="form_details">
+        <form id="contactForm" action="">
+            <span>LEAVE A MESSAGE</span>
+            <h2>We love to hear from you.</h2>
+            <input type="text" id="name" placeholder="Your Name" required minlength="2" maxlength="100">
+            <input type="email" id="email" placeholder="Your Email" required>
+            <input type="text" id="subject" placeholder="Subject">
+            <textarea name="" cols="30" rows="10" id="message" placeholder="Your Message" required
+                minlength="10"></textarea>
+            <button type="submit">Submit</button>
+        </form>
+        <div class="people">
+            <div>
+                <img src="img/people/1.png" alt="">
+                <p><span>John Doe</span> Senior Marketing Officer. <br>Phone: +00011-220088. <br>Email:
+                    Example@gmail.com</p>
+            </div>
+            <div>
+                <img src="img/people/2.png" alt="">
+                <p><span>William Johnson</span> Senior Marketing Officer. <br>Phone: +00011-220088. <br>Email:
+                    Example@gmail.com</p>
+            </div>
+            <div>
+                <img src="img/people/3.png" alt="">
+                <p><span>St Emma</span> Senior Marketing Officer. <br>Phone: +00011-220088. <br>Email:
+                    Example@gmail.com</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- section newsletter -->
+    <section class="newsletter">
+        <div class="newstext">
+            <h2>Sign UP For Newsletter</h2>
+            <p>Get E-mail update for our lastest Shop and <span>Special Offers.</span></p>
+        </div>
+        <form action="">
+            <input type="email" placeholder="Your E-mail Address" required>
+            <button class="email_btn" type="submit">Sign Up</button>
+        </form>
+    </section>
+    <footer>
+        <div class="col">
+            <img src="./img/logo.png" alt="" class="logo">
+            <h2>Contact</h2>
+            <p><Strong>Address: </Strong>Wellington Road, Kissimmee florida USA</p>
+            <p><Strong>Hours: </Strong>10:00 - 18:00 -Sat</p>
+            <div class="follow">
+
+                <h2>Follow Us</h2>
+                <div class="icon">
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-square-instagram"></i>
+                    <i class="fa-brands fa-pinterest"></i>
+                </div>
+                <i class="fa-brands fa-youtube"></i>
+            </div>
+        </div>
+        <div class="col">
+            <h2>About</h2>
+            <a href="#">About us</a>
+            <a href="#">Delivery Infomation</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Term and Condition</a>
+            <a href="#">Contact us</a>
+        </div>
+        <div class="col">
+            <h2>My Account</h2>
+            <a href="#">Sign In</a>
+            <a href="#">View cart</a>
+            <a href="#">My Wishlist</a>
+            <a href="#">Track My Order</a>
+            <a href="#">Help</a>
+        </div>
+        <div class="col">
+            <h2>Install App</h2>
+            <div class="row">
+                <img src="./img/app.jpg" alt="">
+                <img src="./img/play.jpg" alt="">
+            </div>
+            <p>Secured Payments Geteways</p>
+            <img src="./img/pay.png" alt="">
+        </div>
+        <div class="copyright">
+            <p>@2022, Tech etc - HTML, CSS, Ecommerce Template!</p>
+        </div>
+    </footer>
+
+    <div class="popUp_btn" onclick="popUps()">
+        <button class="btn"><i class="fa-solid fa-plus"></i></button>
+    </div>
+    <div class="popUp">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">contact</a></li>
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Help</a></li>
+        </ul>
+    </div>
+
+
+
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function (event) {
+            let valid = true;
+
+            // Validate Name
+            const name = document.getElementById('name');
+            if (name.value.trim() === "" || name.value.length < 2 || name.value.length > 100) {
+                alert('Please enter a valid name (2-100 characters).');
+                valid = false;
+            }
+
+            // Validate Email
+            const email = document.getElementById('email');
+            const emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+            if (!emailPattern.test(email.value)) {
+                alert('Please enter a valid email address.');
+                valid = false;
+            }
+
+            // Validate Message
+            const message = document.getElementById('message');
+            if (message.value.trim() === "" || message.value.length < 10) {
+                alert('Please enter a message with at least 10 characters.');
+                valid = false;
+            }
+
+            if (!valid) {
+                event.preventDefault(); // Prevent form submission if validation fails
+            }
+        });
+    </script>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
