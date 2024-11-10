@@ -434,7 +434,7 @@ p {
       height: 40px;
       border-radius: 50%;
       background: #08f6ea;
-      font-weight: 500;
+      /* font-weight: 500; */
       color: #0878;
       border: 1px solid #cce7d0;
       position: absolute;
@@ -444,6 +444,7 @@ p {
       align-items: center;
       justify-content: center;
       transition: 1 ease-in-out;
+      overflow: hidden;
     }
   }
 }
