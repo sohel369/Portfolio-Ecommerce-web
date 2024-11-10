@@ -43,4 +43,3 @@ function popUps() {
     popUp.classList.toggle("popActive")
     popUp_btn.classList.toggle("hiddenPop")
 }
-
